@@ -46,7 +46,7 @@ const Home: React.FC = () => {
         initial={{ scale: 1 }}
         animate={
           started
-            ? { scale: 0.7, x: "0%", y: "0%" }
+            ? { scale: 0.5, x: "0%", y: "-5%" }
             : { scale: 1, x: "0%", y: "0%" }
         }
         transition={{ duration: 0.5 }}
@@ -75,13 +75,48 @@ const Home: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              className="fixed top-20 left-1/2 -translate-x-1/2"
+              className="fixed left-[47%] -translate-x-1/2 top-[20px]"
             >
-              <select className="p-2 border rounded">
+              <select className="p-2 outline-none">
                 <option>Collections</option>
                 <option>Cases</option>
                 <option>Bands</option>
               </select>
+            </motion.div>
+
+            <motion.div>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="fixed left-[49%] -translate-x-1/2 top-[68.5%] underline text-blue-500 text-xs"
+              >
+                Side view
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="uppercase fixed left-[46%] -translate-x-1/2 bottom-[26%] text-xs text-zinc-500 font-thin"
+              >
+                Apple Watch series 10
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="fixed left-[40%] -translate-x-1/2 bottom-[23%] text-sm text-black font-medium"
+              >
+                46mm Jet Black Aluminum Case with Black Solo Loop
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="fixed left-[49%] -translate-x-1/2 bottom-[20%] text-sm text-zinc-700 font-extralight"
+              >
+                From $429
+              </motion.p>
             </motion.div>
 
             <motion.div
