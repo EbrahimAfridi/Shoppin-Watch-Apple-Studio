@@ -30,7 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased bg-white`}
+        className={`${geistSans.variable} ${roboto.variable} ${geistMono.variable} font-sf-pro-display sf-pro-icons Helvetica Neue Helvetica Arial sans-serif`}
       >
         {children}
       </body>
